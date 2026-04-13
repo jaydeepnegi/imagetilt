@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Co-Living Xper - Your Perfect Co-Living Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/coliving.webp" alt="The Co-Living Xper">
+            </a>
+            <nav class="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <div class="nav-dropdown">
+                    <a href="properties.html" class="nav-link dropdown-toggle">
+                        Properties <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="properties.html?type=luxury" class="dropdown-item">
+                            <i class="fas fa-crown"></i>
+                            <span>Luxury Apartments</span>
+                        </a>
+                        <a href="properties.html?type=studio" class="dropdown-item">
+                            <i class="fas fa-door-open"></i>
+                            <span>Studio Spaces</span>
+                        </a>
+                        <a href="properties.html?type=shared" class="dropdown-item">
+                            <i class="fas fa-home"></i>
+                            <span>Shared Living</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="properties.html" class="dropdown-item">
+                            <i class="fas fa-list"></i>
+                            <span>View All Properties</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Book a Tour</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 id="hero-heading">Your Perfect Co-Living Space Awaits</h1>
+                    <p class="subheading" id="hero-subheading">Experience Modern Living with Community at Heart</p>
+                    <p id="hero-description">Discover premium co-living properties designed for professionals who value quality, convenience, and connection. From fully furnished apartments to vibrant communities, we create spaces where you truly belong.</p>
+                    <a href="contact.html" class="btn btn-primary">Book a Tour</a>
+                </div>
+                <div class="hero-video" data-aos="fade-left">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/zumJJUL_ruM" title="The Co-Living Xper Tour" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Why Choose The Co-Living Xper</h2>
+                <p>Experience the perfect blend of comfort, community, and convenience with our premium co-living solutions.</p>
+            </div>
+            <div class="grid-3" id="features-grid"></div>
+        </div>
+    </section>
+
+    <!-- Featured Properties Section -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Properties</h2>
+                <p>Discover our handpicked selection of premium co-living spaces</p>
+            </div>
+            <div class="grid-2" id="featured-properties"></div>
+            <div class="text-center mt-4">
+                <a href="properties.html" class="btn btn-outline">
+                    View All Properties <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" style="background: var(--off-white);">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>What Our Residents Say</h2>
+                <p>Don't just take our word for it - hear from the community members who call our properties home.</p>
+            </div>
+            <div class="grid-3" id="testimonials-grid"></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" data-aos="zoom-in">
+        <div class="container">
+            <h2>Ready to Find Your Perfect Space?</h2>
+            <p>Join our thriving community of professionals and experience modern co-living at its finest.</p>
+            <a href="contact.html" class="btn">Book a Tour Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="https://customer-assets.emergentagent.com/job_10294092-a93d-4f15-8a96-6d01a7e9b3f8/artifacts/lxuwh59l_coliving.png" alt="The Co-Living Xper">
+                    <p>Creating vibrant communities where people thrive, connect, and grow together.</p>
+                    <div class="social-links">
+                        <a href="#" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                        <a href="#" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="#" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="properties.html">Properties</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Property Management</li>
+                        <li>Co-Living Spaces</li>
+                        <li>Community Building</li>
+                        <li>Flexible Leasing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Level 10, 123 George Street, Sydney NSW 2000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+61 2 1234 5678</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@colivingxper.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Co-Living Xper. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="data.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out'
+        });
+
+        // Icon mapping for Font Awesome
+        const iconMap = {
+            'home': 'fa-home',
+            'calendar': 'fa-calendar',
+            'award': 'fa-award',
+            'map-pin': 'fa-map-marker-alt',
+            'users': 'fa-users',
+            'headphones': 'fa-headphones'
+        };
+
+        // Render Features
+        const featuresGrid = document.getElementById('features-grid');
+        features.forEach((feature, index) => {
+            const featureCard = document.createElement('div');
+            featureCard.className = 'card';
+            featureCard.setAttribute('data-aos', 'fade-up');
+            featureCard.setAttribute('data-aos-delay', index * 100);
+            featureCard.innerHTML = `
+                <div class="card-icon">
+                    <i class="fas ${iconMap[feature.icon]}"></i>
+                </div>
+                <h3>${feature.title}</h3>
+                <p>${feature.description}</p>
+            `;
+            featuresGrid.appendChild(featureCard);
+        });
+
+        // Render Featured Properties (first 4)
+        const propertiesGrid = document.getElementById('featured-properties');
+        properties.slice(0, 4).forEach((property, index) => {
+            const propertyCard = document.createElement('div');
+            propertyCard.className = 'property-card';
+            propertyCard.setAttribute('data-aos', 'fade-up');
+            propertyCard.setAttribute('data-aos-delay', index * 100);
+            propertyCard.innerHTML = `
+                <div class="property-image">
+                    <img src="${property.image}" alt="${property.name}">
+                    <span class="property-badge ${property.available ? 'badge-available' : 'badge-coming'}">
+                        ${property.available ? 'Available Now' : 'Coming Soon'}
+                    </span>
+                </div>
+                <div class="property-content">
+                    <div class="property-header">
+                        <h3>${property.name}</h3>
+                        <span class="property-price">${property.price}</span>
+                    </div>
+                    <p class="property-location">
+                        <i class="fas fa-map-marker-alt" style="color: var(--aqua);"></i>
+                        ${property.location}
+                    </p>
+                    <p>${property.description}</p>
+                    <div class="property-details">
+                        <span>
+                            <i class="fas fa-bed" style="color: var(--teal);"></i>
+                            ${property.bedrooms} Bed
+                        </span>
+                        <span>
+                            <i class="fas fa-bath" style="color: var(--teal);"></i>
+                            ${property.bathrooms} Bath
+                        </span>
+                    </div>
+                    <a href="contact.html" class="btn btn-primary" style="width: 100%; text-align: center;">Schedule Viewing</a>
+                </div>
+            `;
+            propertiesGrid.appendChild(propertyCard);
+        });
+
+        // Render Testimonials
+        const testimonialsGrid = document.getElementById('testimonials-grid');
+        testimonials.forEach((testimonial, index) => {
+            const testimonialCard = document.createElement('div');
+            testimonialCard.className = 'testimonial-card';
+            testimonialCard.setAttribute('data-aos', 'fade-up');
+            testimonialCard.setAttribute('data-aos-delay', index * 100);
+            
+            const stars = '<i class="fas fa-star"></i>'.repeat(testimonial.rating);
+            
+            testimonialCard.innerHTML = `
+                <div class="stars">${stars}</div>
+                <p class="testimonial-content">"${testimonial.content}"</p>
+                <div class="testimonial-author">
+                    <div class="avatar">${testimonial.avatar}</div>
+                    <div class="author-info">
+                        <h4>${testimonial.name}</h4>
+                        <p>${testimonial.role}</p>
+                    </div>
+                </div>
+            `;
+            testimonialsGrid.appendChild(testimonialCard);
+        });
+
+        // Active nav link
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.nav-link').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.querySelector('.nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuBtn.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked (except dropdown toggles)
+        document.querySelectorAll('.nav-link:not(.dropdown-toggle)').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                mobileMenuBtn.classList.remove('active');
+            });
+        });
+
+        // Dropdown Menu Toggle
+        const navDropdowns = document.querySelectorAll('.nav-dropdown');
+        
+        navDropdowns.forEach(dropdown => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
+            
+            // Toggle dropdown on click
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                
+                // Close other dropdowns
+                navDropdowns.forEach(other => {
+                    if (other !== dropdown) {
+                        other.classList.remove('active');
+                    }
+                });
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            // On desktop: close dropdown when clicking outside
+            // On mobile: only close if not clicking the nav at all
+            navDropdowns.forEach(dropdown => {
+                if (!dropdown.contains(e.target) && window.innerWidth > 768) {
+                    dropdown.classList.remove('active');
+                }
+            });
+        });
+
+        // Close dropdown when a link is clicked
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', () => {
+                navDropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+                // Close mobile menu when selecting a property
+                if (window.innerWidth <= 768) {
+                    nav.classList.remove('active');
+                    mobileMenuBtn.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

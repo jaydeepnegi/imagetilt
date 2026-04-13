@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; background: #000; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; }
+        .container { position: relative; width: 90vw; height: 60vh; border-radius: 15px; overflow: hidden; }
+        
+        /* Stack images on top of each other */
+        .img-layer { 
+            position: absolute; width: 100%; height: 100%; 
+            object-fit: cover; transition: opacity 0.2s ease-out; 
+        }
+
+        #img-still { z-index: 2; opacity: 1; } /* Image 1 */
+        #img-tilt { z-index: 3; opacity: 0; }  /* Image 2 (Hidden by default) */
+        
+        #btn { z-index: 10; padding: 15px 25px; background: #fff; border: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Tap to Start Filter</button>
+
+    <div class="container" id="view" style="display:none;">
+        <img id="img-still" class="img-layer" src="https://c.ndtvimg.com/2026-03/qam30ouc_skin-care_625x300_31_March_26.jpg?im=FaceCrop,algorithm=dnn,width=540,height=720?downsize=172:206">
+        <img id="img-tilt" class="img-layer" src="https://c.ndtvimg.com/2026-04/v7psm16s_timex-watches-for-men_625x300_08_April_26.jpg?im=FaceCrop,algorithm=dnn,width=540,height=720?downsize=172:206">
+    </div>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const view = document.getElementById('view');
+        const imgTilt = document.getElementById('img-tilt');
+
+        btn.onclick = () => {
+            // Request permission for iOS 13+
+            if (typeof DeviceOrientationEvent.requestPermission === 'function') {
+                DeviceOrientationEvent.requestPermission().then(response => {
+                    if (response == 'granted') init();
+                });
+            } else { init(); }
+        };
+
+        function init() {
+            btn.style.display = 'none';
+            view.style.display = 'block';
+
+            window.addEventListener('deviceorientation', (event) => {
+                let tilt = Math.abs(event.gamma); // Get absolute tilt (left or right)
+
+                // If tilted more than 15 degrees, show Image 2
+                if (tilt > 15) {
+                    imgTilt.style.opacity = "1";
+                } else {
+                    imgTilt.style.opacity = "0";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
